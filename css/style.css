@@ -1,14 +1,24 @@
 .page-body {
+    height: 100%;
     margin: 0;
     font-family: 'PT Sans';
     text-transform: uppercase;
-    background-color: white;
-    margin-left: 6%;
-    margin-right: 6%;
-    box-shadow: 0 0 20px rgba(0,0,0,0.5);
-}
-.page {
     background-color: #f2f2f3;
+    text-transform: uppercase;
+    line-height: 21px;
+    font-style: normal;
+    
+}
+.main-header,
+.container,
+.page-footer {
+    max-width: 1200px;
+    padding: 0;
+    margin: 0 auto;
+
+    box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+    background-color: white;
+
 }
 a {
     text-decoration: none;
@@ -16,32 +26,53 @@ a {
 li {
     list-style-type: none;
 }
-h2 {
-    font-size: 21px;
-}
-h1 {
-    font-size: 30px;
-}
+.main-header {
+    
+    height: 56px;
 
-
+    max-height: 56px;
+    text-align: center;
+    background-color: white; // для наглядной визуализации блока
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 26px;
+    
+}
 .site-navigation {
+    padding-left: 50px;
+    padding-right: 50px;
     display: flex;
-    justify-content: space-around;
-    margin: 0;
-    background-color: yellow; // для наглядной визуализации блока
-    height: 4em;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    
+}
+
+.site-navigation li {
+    width: 150px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.site-navigation img {
+    position: relative;
+    top: -15px;
 }
 
 .page-title {
     width: 100%;
     height: 15em;
-    background-color: tomato; // для наглядной визуализации блока
-    vertical-align: sub;
+    background-color: white; // для наглядной визуализации блока
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 .page-title h2 {
-    width: 30%;
+    width: 100%;
     height: 40%;
-    background-color: blue; // для наглядной визуализации блока
+    background-color: white; 
+
 }
 
 
@@ -54,38 +85,73 @@ h1 {
     display: table-cell;
     color: white;
 }
+.features1-text p {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+}
+.features1-text h2, .features2-text h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 21px;
+    
+}
 .features-img img{
     width: 100%;
     height: 256px;
 }
-
 .features-ul li {
-    width: 400px;
-    height: 300px;
-    background-color: white;
+    width: 300px;
+    height: 225px;
     float: left;
     text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
-    line-height: 30px;
+    padding: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
-li .fa{
-    font-size: 100px;
+.features4 {
+    max-height: 256px;
+    background-color: red;
 }
 
-.part2 {
-    margin-top: 256px;
 
-}
 
 .offers {
     text-align: center;
+
+}
+.tel {
+  
+    margin-left: 100px;
+}
+.page-footer {
+    max-height: 120px;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
 }
 
-.page-footer {
-    background-color: rgba(255, 255, 255, 0.9)
+.tel {
+  
+    margin-left: 100px;
+}
+.cite li {
+  padding-left: 10px;
+  padding-right: 10px;
+   display: inline-block;
+   
+}
+.htmlAcademy {
+    
+    margin-right: 100px;
+}
+
+.filter {
+    background: url(img/blur.jpg);
 }
