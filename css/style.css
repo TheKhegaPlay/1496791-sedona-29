@@ -7,16 +7,16 @@
     text-transform: uppercase;
     line-height: 21px;
     font-style: normal;
+    font-weight: normal;
+    max-width: 1200px; 
+    padding: 0; 
+    margin: 0 auto; 
+    box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2); 
     
 }
 .main-header,
 .container,
 .page-footer {
-    max-width: 1200px;
-    padding: 0;
-    margin: 0 auto;
-
-    box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
     background-color: white;
 
 }
@@ -29,10 +29,9 @@ li {
 .main-header {
     
     height: 56px;
-
     max-height: 56px;
     text-align: center;
-    background-color: white; // для наглядной визуализации блока
+    background-color: white;
     font-weight: bold;
     font-size: 14px;
     line-height: 26px;
@@ -63,8 +62,7 @@ li {
 .page-title {
     width: 100%;
     height: 15em;
-    background-color: white; // для наглядной визуализации блока
-    display: flex;
+    background-color: white; /* для наглядной визуализации блока */
     align-items: center;
     text-align: center;
 }
@@ -87,71 +85,136 @@ li {
 }
 .features1-text p {
     font-size: 14px;
-    font-style: normal;
-    font-weight: normal;
 }
 .features1-text h2, .features2-text h2 {
-    font-style: normal;
     font-weight: bold;
     font-size: 21px;
     line-height: 21px;
     
 }
-.features-img img{
-    width: 100%;
-    height: 256px;
-}
+
 .features-ul li {
-    width: 300px;
+    width: 310px;
     height: 225px;
-    float: left;
+    display: inline-block;
     text-align: center;
-    padding: 25px;
+    padding: 15px;
     margin-top: 15px;
     margin-bottom: 15px;
     margin-left: 15px;
     margin-right: 15px;
-}
-.features4 {
-    max-height: 256px;
-    background-color: red;
+   
 }
 
+.features4 {
+    background-color: #EEEEEE;
+    overflow: hidden; 
+}
+.features-img {
+    max-width: 800px;
+    max-height: 256px;
+}
+.features-img img{
+    width: 100%;
+    height: 256px;
+}
+.features1-text {
+    float: left;
+
+}
+.photo1 {
+    float: right;
+    
+}
+.photo2 {
+    float: left;
+}
 
 
 .offers {
     text-align: center;
 
 }
-.tel {
-  
-    margin-left: 100px;
-}
+
 .page-footer {
-    max-height: 120px;
+    max-height: 150px;
     background-color: rgba(255, 255, 255, 0.7);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
+    margin: 0 auto;
 }
 
 .tel {
-  
-    margin-left: 100px;
+    width: 250px;
+    
+    
+}
+.cite {
+    display: flex;
+    justify-content: center;
+}
+.cite {
+    position: relative;
+    right: 5%;
+    
 }
 .cite li {
-  padding-left: 10px;
-  padding-right: 10px;
-   display: inline-block;
-   
-}
-.htmlAcademy {
+    display: inline-block;
     
-    margin-right: 100px;
+    text-align: center;
+    
 }
 
-.filter {
-    background: url(img/blur.jpg);
+/* оформление внутренней страницы */
+
+.filter  {
+    height: 217px;
+    width: 100%;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+}
+
+.filter div {
+    display: inline-block;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.price {
+    float: right;
+}
+.search {
+    display: inline-block;
+    height: 36px;
+    width: 137px;
+    padding: 8px;
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: rgba(255, 255, 255, 0.4);
+    text-align: center;
+    
+}
+
+.result div {
+    border-bottom: #E5E5E5 1px solid;
+    padding: 15px;
+    
+}
+.result input {
+    width: 110px;
+    height: 27px;
+    color: white;
+}
+.result input1 {
+    background-color: #81B3D2;
+}
+.filter2 {
+    height: 100px;
+    
+    display: flex;
+    justify-content: space-around;
+    
 }

@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Гостиницы</title>
-    <link rel="stylesheet" href="css/generals style.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page-body">
@@ -14,64 +13,78 @@
       <ul class="site-navigation">
         <li><a href="blank-page.html">Информация</a></li>
         <li><a href="blank-page.html">Фото и видео</a></li>
-        <li><a><img src="img/sedona logo.png" alt="logo" width="70%"></a></li> 
+        <li><a href="index.html"><img src="img/sedona logo.png" alt="logo" width="70%"></a></li> 
         <li><a href="blank-page.html">Карта штата</a></li>
-       <li><a href="second-page.html">Гостиницы</a></li>
+        <li><a href="second-page.html">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
 
       <main class="container">
         <section class="filter">
-            <div><img src="img/blur.jpg" alt="размытый фон"></div>
-            <div><h1>Инфраструктура</h1>
+          <div class="filter-div">
+            <div>
+              <h1>Инфраструктура</h1>
               <p><input type="checkbox"> Бассейн</p>
               <p><input type="checkbox"> Парковка</p>
               <p><input type="checkbox"> WI-FI</p>
             </div>
-            <div><h1>Тип жилья</h1>
+            <div>
+              <h1>Тип жилья</h1>
               <p><input type="checkbox"> Гостиница</p>
               <p><input type="checkbox"> Мотель</p>
               <p><input type="checkbox"> Апартаменты</p>
             </div>
-            <div><h1>Стоимость</h1></div>
+            <div class="price">
+              <h1>Стоимость</h1>
+            </div>
+            <div class="search-div">
+              <input type="submit" value="Показать" class="search">
+            </div>
+          </div>
         </section>
 
-        <section>
-            <div>
-              <h2>Найдено:</h2>
-              <buttom>по цене</buttom>
-              <buttom>по типу</buttom>
-              <buttom>по рейтингу</buttom>
-              <buttom></buttom>
-              <buttom></buttom>
+        <section class="result">
+            <div class="filter2">
+              <h2>Найдено:3</h2>
+              <p>Сортировка:</p>
+              <ul>
+                <li><a href="#">по цене</a></li>
+                <li><a href="#">по типу</a></li>
+                <li><a href="#">по рейтингу</a></li>
+              </ul>
             </div>
+
             <div>
-              <img src="">
+              <img src="img/amara resolt.jpg" alt="Amara resolt" width="135px" height="90px">
               <h2>Amara Resort & Spa</h2>
               <ul>
                 <li>Гостиница</li>
                 <li>от 4000р</li>
               </ul>
-              <a href="">Подробнее</a>
+              <input type="button" value="Подробнее">
               <input type="button" value="Забронировать">
             </div>
+
             <div>
+              <img src="img/Desert Quail Inn.jpg" alt="Desert Quail Inn" width="135px" height="90px">
               <h2>Desert Quail Inn</h2>
               <ul>
                 <li>Мотель</li>
                 <li>от 3000р</li>
               </ul>
-              <a href="">Подробнее</a>
+              <input type="button" value="Подробнее">
               <input type="button" value="Забронировать">
             </div>
+
             <div>
+              <img src="img/Villas at Poco Diablo.jpg" alt="Villas at Poco Diablo" width="135px" height="90px">
               <h2>Villas at Poco Diablo</h2>
               <ul>
                 <li>Апартаменты</li>
                 <li>от 2000р</li>
               </ul>
-              <a href="">Подробнее</a>
+              <input type="button" value="Подробнее">
               <input type="button" value="Забронировать"></div>
         </section>
       </main>
@@ -87,13 +100,13 @@
         <div class="cite">
           <ul>
             <li>
-              <a href="#">Твитер</a>
+              <a href="#"><img src="img/twiter.png" alt=""></a>
             </li>
             <li>
-              <a href="#">Фейсбук</a>
+              <a href="#"><img src="img/facebook.png" alt=""></a>
             </li>
             <li>
-              <a href="#">Ютуб</a>
+              <a href="#"><img src="img/youtube.png" alt=""></a>
             </li>
           </ul>
         </div>  
