@@ -8,7 +8,7 @@
     line-height: 21px;
     font-style: normal;
     font-weight: normal;
-    max-width: 1200px; 
+    max-width: 1200px;
     padding: 0; 
     margin: 0 auto; 
     box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2); 
@@ -18,8 +18,39 @@
 .container,
 .page-footer {
     background-color: white;
-
 }
+
+.logo, .text-welcome, .background {
+    margin:  auto;
+    position: absolute;
+}
+.background-block {
+    width: 1200px;
+    height: 150px;
+}
+.background {
+    top: -27px;
+    clip:rect( 83px 1200px 600px 0px);
+}
+.logo {
+    top: 0; 
+    left: 0; 
+    bottom: 0; 
+    right: 0;
+}
+.text-welcome {
+    left: 0;
+    right: 0;
+    top: 130px;
+}
+.group {
+    position: absolute;
+    
+    clip:rect( 0px 1200px 100px 0px);
+    top: 505px;
+    bottom: 0;
+}
+
 a {
     text-decoration: none;
 }
@@ -27,42 +58,52 @@ li {
     list-style-type: none;
 }
 .main-header {
-    
+    width: 1200px;
     height: 56px;
-    max-height: 56px;
     text-align: center;
     background-color: white;
     font-weight: bold;
     font-size: 14px;
     line-height: 26px;
-    
+    position: absolute;
+    top: 0; 
+    bottom: 0; 
 }
 .site-navigation {
-    padding-left: 50px;
-    padding-right: 50px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
     margin-top: 0;
-    margin-bottom: 0;
-
-    
+    margin-bottom: 0; 
+    display: flex;
+    align-items: center; 
+    justify-content: space-around;
+    margin-right: 80px;
 }
-
 .site-navigation li {
-    width: 150px;
-    font-weight: bold;
+    height: 26px;
     margin-top: 15px;
 }
-.site-navigation img {
-    position: relative;
-    top: -15px;
+/*.header-information {
+    margin-left: 72px;
 }
-
+.header-pictures {
+    margin-left: 300px;
+}
+.header-maps {
+    margin-left: 816px;
+}
+.header-hotels {
+    margin-left: 1048px;
+} */
+.container:not(.background-block) {
+    height: auto;
+    width: 1200px;
+    margin-top: -40px;
+    
+}
 .page-title {
+    margin-top: 500px;
     width: 100%;
-    height: 15em;
-    background-color: white; /* для наглядной визуализации блока */
+    height: 216px;
+
     align-items: center;
     text-align: center;
 }
@@ -78,9 +119,11 @@ li {
     background-color: #81B3D2;
     width: 400px;
     height: 256px;
+    display: flex;
     text-align: center;
-    vertical-align: middle;
-    display: table-cell;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column;
     color: white;
 }
 .features1-text p {
@@ -92,7 +135,14 @@ li {
     line-height: 21px;
     
 }
-
+.features1 {
+    display: grid;
+    grid-template-columns: 400px 800px;
+}
+.features3 {
+    display: grid;
+    grid-template-columns: 800px 400px;
+}
 .features-ul li {
     width: 310px;
     height: 225px;
@@ -105,69 +155,66 @@ li {
     margin-right: 15px;
    
 }
-
+.features {
+    margin-top: -20px;
+}
 .features4 {
+    height: 256px;
+    margin-top: -5px;
     background-color: #EEEEEE;
-    overflow: hidden; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
 }
-.features-img {
-    max-width: 800px;
-    max-height: 256px;
-}
+
 .features-img img{
     width: 100%;
     height: 256px;
 }
-.features1-text {
-    float: left;
-
-}
-.photo1 {
-    float: right;
-    
-}
-.photo2 {
-    float: left;
-}
-
-
 .offers {
     text-align: center;
-
+    height: 291px;
+    width: 1200px;
+    background-color: white;
 }
-
+.button {
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+    height: 86px;
+    width: 568px;
+    background-color: #766357;
+}
 .page-footer {
-    max-height: 150px;
-    background-color: rgba(255, 255, 255, 0.7);
-    display: flex;
-    justify-content: space-around;
+    height: 120px;
+    width: 1200px;
+    background-color: rgba(255, 255, 255, 0.9);
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    text-align: center;
+
 }
 
-.tel {
-    width: 250px;
-    
-    
-}
 .cite {
-    display: flex;
-    justify-content: center;
-}
-.cite {
-    position: relative;
-    right: 5%;
-    
+    vertical-align: middle;
+    display: table-cell;
 }
 .cite li {
     display: inline-block;
-    
     text-align: center;
-    
 }
-
+.tel {
+    text-align: center;
+}
+.htmlAcademy {
+    font-style: Regular;
+    font-size: 14px;
+    vertical-align: middle;
+}
 /* оформление внутренней страницы */
 
 .filter  {
@@ -208,7 +255,7 @@ li {
     height: 27px;
     color: white;
 }
-.result input1 {
+.result input {
     background-color: #81B3D2;
 }
 .filter2 {

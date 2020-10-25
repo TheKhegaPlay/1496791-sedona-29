@@ -7,23 +7,28 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
   </head>
   <body class="page-body">
-
     <header class="main-header">
-      <nav class="main-navigation">
-      
-        <ul class="site-navigation">
-          <li><a href="blank-page.html">Информация</a></li>
-          <li><a href="blank-page.html">Фото и видео</a></li>
-          <li><a href="index.html"><img src="img/sedona logo.png" alt="logo" width="70%"></a></li> 
-          <li><a href="blank-page.html">Карта штата</a></li>
-          <li><a href="second-page.html">Гостиницы</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div class="logo">
+      <a href="index.html"><img src="img/logo.svg" alt="sedona-icon" width="138px" height="70px"></a>
+    </div>
+    <nav class="main-navigation">
+    
+      <ul class="site-navigation">
+        <li class="header-information"><a href="blank-page.html">Информация</a></li>
+        <li class="header-pictures"><a href="blank-page.html">Фото и видео</a></li>
+        <li class="header-maps"><a href="blank-page.html">Карта штата</a></li>
+        <li class="header-hotels"><a href="second-page.html">Гостиницы</a></li>
+      </ul>
+    </nav>
+  </header>
         
     <main class="container">
 
-      <img src="sedona.jpg" alt="sedona-logo" width="100%">
+      <div class="background-block">
+        <img src="img/фон.png" alt="sedona-bck" width="1200px" class="background">
+        <img src="img/Group 1.png" alt="white" width="1200px"  class="group">
+        <img src="img/welcome.png" alt="text-welcome" width="456,65px" height="350,88px" class="text-welcome">
+      </div>
 
       <section class="page-title">
         <h2>Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
@@ -35,7 +40,7 @@
           <div class="features1-text">
             <h2>Настоящий<br> городок</h2>
             <p>— №1 —</p>
-            <p>Седона - не аттракцион для туристов,<br> там течёт своя жизнь</p>
+            <p>Седона - не аттракцион для туристов, там<br> течёт своя жизнь</p>
           </div>
           <div class="features-img photo1">
           <a>
@@ -101,17 +106,17 @@
       </section>
 
       <section class="offers">
-        <h1>Заинтересовались?</h1>
-        <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <div>
-            <h2>Поиск гостиницы в Седоне</h2>
-          </div>
-          <div style="position:relative;overflow:hidden;">
-            <a href="https://yandex.kz/MAPS/110669/sedona/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Седона</a>
-            <a href="https://yandex.kz/MAPS/110669/sedona/?l=sat%2Cskl&ll=-111.758489%2C34.869802&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fll%3D-111.760%252C34.870%26spn%3D0.030%252C0.029%26text%3DUnited%2520States%2520of%2520America%252C%2520Arizona%252C%2520Coconino%2520County%252C%2520Sedona&utm_medium=mapframe&utm_source=maps&z=17" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс.Карты</a>
-            <iframe src="https://yandex.kz/map-widget/v1/-/CCQ37Fq4lC" width="100%" height="594" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+        <div>
+          <h1>Заинтересовались?</h1>
+          <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        </div>
+        <div class="button">
+          <h2>Поиск гостиницы в Седоне</h2>
+        </div>
       </section>
-
+        <div>
+          <img src="img/map.jpg" alt="карта Седоны" height="594px" width="1200px">
+        </div>
     </main> 
 
       <footer class="page-footer">
@@ -125,21 +130,20 @@
         <div class="cite">
           <ul>
             <li>
-              <a href="#"><img src="img/twiter.png" alt="twiter"></a>
+              <a href="#"><img src="img/twiter.png" alt="twiter" width="46px" height="48px"></a>
             </li>
             <li>
-              <a href="#"><img src="img/facebook.png" alt="facebook"></a>
+              <a href="#"><img src="img/facebook.png" alt="facebook" width="46px" height="48px"></a>
             </li>
             <li>
-              <a href="#"><img src="img/youtube.png" alt="youtube"></a>
+              <a href="#"><img src="img/youtube.png" alt="youtube" width="46px" height="48px"></a>
             </li>
           </ul>
         </div>  
 
         <div class="htmlAcademy">
-          <p>
-            <a href="https://htmlacademy.ru">HTML Academy</a>
-          </p>
+            Website by
+            <img src="img/logo-htmlacademy.png" alt="логотип академии">
         </div>  
       </footer>
 
