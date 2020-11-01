@@ -9,15 +9,16 @@
   <body class="page-body">
     <header class="main-header">
     <div class="logo">
-      <a href="index.html"><img src="img/logo.svg" alt="sedona-icon" width="138px" height="70px"></a>
+      <a href="index.html"><img src="img/logo.svg" alt="sedona-icon" width="138" height="70"></a>
     </div>
     <nav class="main-navigation">
     
       <ul class="site-navigation">
-        <li class="header-information"><a href="blank-page.html">Информация</a></li>
-        <li class="header-pictures"><a href="blank-page.html">Фото и видео</a></li>
-        <li class="header-maps"><a href="blank-page.html">Карта штата</a></li>
-        <li class="header-hotels"><a href="second-page.html">Гостиницы</a></li>
+        <li><a href="#">Информация</a></li>
+        <li><a href="#">Фото и видео</a></li>
+        <li></li>
+        <li><a href="#">Карта штата</a></li>
+        <li><a href="second-page.html">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
@@ -25,14 +26,18 @@
     <main class="container">
 
       <div class="background-block">
-        <img src="img/фон.png" alt="sedona-bck" width="1200px" class="background">
-        <img src="img/Group 1.png" alt="white" width="1200px"  class="group">
-        <img src="img/welcome.png" alt="text-welcome" width="456,65px" height="350,88px" class="text-welcome">
+        <img src="img/фон.png" alt="sedona-bck" width="1200" class="background">
+        <img src="img/Shape.png" alt="white" width="1200"  class="group">
+        <img src="img/welcome.png" alt="text-welcome" height="352" class="text-welcome">
       </div>
 
       <section class="page-title">
-        <h2>Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <div class="page-title-h2">
+          <h2>Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
+        </div>
+        <div class="page-title-p">
+          <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        </div>
       </section>
 
       <section class="features">
@@ -43,9 +48,7 @@
             <p>Седона - не аттракцион для туристов, там<br> течёт своя жизнь</p>
           </div>
           <div class="features-img photo1">
-          <a>
-            <img src="img/sedona.png" alt="sedona">
-          </a>
+            <img src="img/sedona.jpg" alt="sedona">
           </div>
         </div>
 
@@ -74,7 +77,7 @@
         <div class="features3">
           <div class="features-img photo2">
             <a>
-              <img src="img/мост.png" alt="devils bridge">
+              <img src="img/мост.jpg" alt="devils bridge">
             </a>
           </div>
           <div class="features2-text">
@@ -105,18 +108,81 @@
         </div>
       </section>
 
-      <section class="offers">
-        <div>
-          <h1>Заинтересовались?</h1>
-          <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        </div>
-        <div class="button">
-          <h2>Поиск гостиницы в Седоне</h2>
+      <section class="search-hotel">
+        <header class="search-header">
+          <p class="search-question">Заинтересовались?</p>
+          <p class="search-date">Укажите продполагаемые даты поездки,
+            <br>и мы покажем вам лучшие предложения гостиниц в Седоне
+          </p>
+        </header>
+        <div class="form-title">
+          <a href="#" class="hotel-button">
+            <h2 class="form-header">Поиск гостиницы в седоне</h2>
+          </a>
         </div>
       </section>
+      <section class="form">
+        <form action="https://echo.htmlacademy.ru" class="form-search no-js" method="post">
+          <fieldset class="form-body">
+            <p>
+              <label class="form-search-label-from" for="from">Дата заезда: </label>
+              <input class="form-search-field" id="from" name="date" placeholder="24 апреля 2017" type="text">
+              <button type="button" class="form-search-calendar">
+                <svg height="22" viewbox="0 0 21 22" width="21" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" />
+                  <path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z" />
+                </svg>
+              </button>
+            </p>
+            <p>
+              <label class="form-search-label-to" for="to">Дата выезда: </label>
+              <input class="form-search-field" id="to" name="date" placeholder="4 июля 2017" type="text">
+              <button type="button" class="form-search-calendar">
+                <svg height="22" viewbox="0 0 21 22" width="21" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" />
+                  <path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z" />
+                </svg>
+              </button>
+            </p>
+            <div class="humans">
+              <p class="find-item">
+                <button class="minus-adult" type="button">
+                  <svg height="12" viewbox="0 0 32 32" width="12">
+                    <path d="M0 13v6c0 0.552 0.448 1 1 1h30c0.552 0 1-0.448 1-1v-6c0-0.552-0.448-1-1-1h-30c-0.552 0-1 0.448-1 1z"></path>
+                  </svg>
+                </button>
+                <button class="plus-adult" type="button">
+                  <svg height="11" viewbox="0 0 32 32" width="11">
+                    <path d="M31 12h-11v-11c0-0.552-0.448-1-1-1h-6c-0.552 0-1 0.448-1 1v11h-11c-0.552 0-1 0.448-1 1v6c0 0.552 0.448 1 1 1h11v11c0 0.552 0.448 1 1 1h6c0.552 0 1-0.448 1-1v-11h11c0.552 0 1-0.448 1-1v-6c0-0.552-0.448-1-1-1z"></path>
+                  </svg>
+                </button>
+                <label for="adults" class="form-search-number">Взрослые:</label>
+                <input class="input-number input-adults" name="adult" id="adults" placeholder="2" type="text"> 
+              </p>
+              <p class="find-item">
+                <button class="minus-child" type="button">
+                  <svg height="12" viewbox="0 0 32 32" width="12">
+                    <path d="M0 13v6c0 0.552 0.448 1 1 1h30c0.552 0 1-0.448 1-1v-6c0-0.552-0.448-1-1-1h-30c-0.552 0-1 0.448-1 1z"></path>
+                  </svg>
+                </button>
+                <button class="plus-child" type="button">
+                  <svg height="11" viewbox="0 0 32 32" width="11">
+                    <path d="M31 12h-11v-11c0-0.552-0.448-1-1-1h-6c-0.552 0-1 0.448-1 1v11h-11c-0.552 0-1 0.448-1 1v6c0 0.552 0.448 1 1 1h11v11c0 0.552 0.448 1 1 1h6c0.552 0 1-0.448 1-1v-11h11c0.552 0 1-0.448 1-1v-6c0-0.552-0.448-1-1-1z"></path>
+                  </svg>
+                </button>
+                <label for="children" class="form-search-number">Дети:</label>
+                <input class="input-number input-children" name="child" id="children" placeholder="0" type="text"> 
+              </p>
+            </div>
+            <button class="search-button" type="submit"> Найти </button>
+          </fieldset>
+        </form>
         <div>
-          <img src="img/map.jpg" alt="карта Седоны" height="594px" width="1200px">
+          <img src="img/map.jpg" alt="карта Седоны" height="594" width="1200">
         </div>
+      </section>
+
+        
     </main> 
 
       <footer class="page-footer">
@@ -130,13 +196,13 @@
         <div class="cite">
           <ul>
             <li>
-              <a href="#"><img src="img/twiter.png" alt="twiter" width="46px" height="48px"></a>
+              <a href="#"><img src="img/twiter.png" alt="twiter" width="46" height="48"></a>
             </li>
             <li>
-              <a href="#"><img src="img/facebook.png" alt="facebook" width="46px" height="48px"></a>
+              <a href="#"><img src="img/facebook.png" alt="facebook" width="46" height="48"></a>
             </li>
             <li>
-              <a href="#"><img src="img/youtube.png" alt="youtube" width="46px" height="48px"></a>
+              <a href="#"><img src="img/youtube.png" alt="youtube" width="46" height="48"></a>
             </li>
           </ul>
         </div>  
@@ -147,6 +213,6 @@
         </div>  
       </footer>
 
-
+      <script src="js/app.min.js"></script>
   </body>
 </html>
