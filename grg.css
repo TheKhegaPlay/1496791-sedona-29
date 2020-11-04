@@ -14,9 +14,9 @@
  
 /*** uncss> filename: B:/git/1496791-sedona-29/css/style.css ***/
 
-.page-body {
+.body2 {
     height: 100%;
-    max-height: 2578px;
+    max-height: 933px;
     margin: 0;
     font-family: 'PT Sans';
     text-transform: uppercase;
@@ -97,45 +97,9 @@ li {
     text-align: right;
 
 }
-/*.header-information {
-    margin-left: 72px;
-}
-.header-pictures {
-    margin-left: 300px;
-}
-.header-maps {
-    margin-left: 816px;
-}
-.header-hotels {
-    margin-left: 1048px;
-} */
-.container:not(.background-block) {
-    height: auto;
-    width: 1200px;
-    margin-top: -40px;
-    
-}
-
-input[type="text"] {
-    background: #f2f2f2;
-    color: #000000;
-    text-transform: uppercase;
-}
-
-input[type="text"]::-webkit-input-placeholder {
-    color: #000000;
-}
-
-input[type="text"]:-ms-input-placeholder {
-    color: #000000;
-}
-
-input[type="text"]::-ms-input-placeholder {
-    color: #000000;
-}
 
 
-.page-footer {
+.page-footer2 {
     height: 120px;
     width: 1200px;
     background-color: rgba(255, 255, 255, 1);
@@ -145,23 +109,22 @@ input[type="text"]::-ms-input-placeholder {
     align-items: center;
     justify-content: space-around;
     position: relative;
-    top: 40px;
 }
 
 }
 
-.cite {
+.cite2 {
     vertical-align: middle;
     display: table-cell;
     margin-bottom: 1px;
     margin-right: 50px;
 
 }
-.cite li {
+.cite2 li {
     display: inline-block;
     text-align: center;
 }
-.tel {
+.tel2 {
     text-align: center;
     font-size: 14px;
     line-height: 15px;
@@ -172,16 +135,16 @@ input[type="text"]::-ms-input-placeholder {
     position: relative;
     right: 25px;
 }
-.tel p {
+.tel2 p {
     font-size: 21px;
     position: relative;
     top: 32px;
 }
-.tel h2 {
+.tel2 h2 {
     position: relative;
     top: 16px;
 }
-.htmlAcademy {
+.htmlAcademy2 {
     font-size: 14px;
     vertical-align: middle;
 
@@ -194,7 +157,7 @@ input[type="text"]::-ms-input-placeholder {
     left: 18px;
     top: -10px;
 }
-.htmlAcademy img {
+.htmlAcademy2 img {
     position: relative;
     left: 15px;
 }
@@ -202,16 +165,22 @@ input[type="text"]::-ms-input-placeholder {
 
 
 
-body {
-    min-width: 768px;
+.page-body2 {
+    max-height: 933px;
+    height: 100%;
     margin: 0;
-    padding: 0;
-
+    font-family: 'PT Sans';
     text-transform: uppercase;
-
-    background-color: #f2f2f2;
-
-    font-family: "PT Sans", sans-serif, Arial;
+    background-color: #f2f2f3;
+    text-transform: uppercase;
+    line-height: 21px;
+    font-style: normal;
+    font-weight: normal;
+    max-width: 1200px;
+    padding: 0; 
+    margin: 0 auto; 
+    box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2); 
+    letter-spacing: 0.02px;
 }
 
 p,
@@ -246,13 +215,22 @@ label {
     content: "";
 }
 
-.container {
-    min-width: 768px;
+.container2 {
+    height: 100%;
+    max-height: 933px;
+    margin: 0;
+    font-family: 'PT Sans';
+    text-transform: uppercase;
+    background-color: white;
+    text-transform: uppercase;
+    line-height: 21px;
+    font-style: normal;
+    font-weight: normal;
     max-width: 1200px;
-    margin: 0 auto;
-    background-color: #ffffff;
-    position: relative;
-    top: 41px;
+    padding: 0; 
+    margin: 0 auto; 
+    box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2); 
+    letter-spacing: 0.02px;
 }
 
 
@@ -270,6 +248,7 @@ label {
     font-weight: 700;
     line-height: 21px;
 }
+
 
 .filter-btn,
 .filter-variant,
@@ -473,7 +452,7 @@ input:checked + .filter-variant:before {
     margin-bottom: 11px;
     padding-top: 5px;
     padding-bottom: 5px;
-
+    width: 300px;
     border: 2px solid #ffffff;
     border-radius: 5px;
 
