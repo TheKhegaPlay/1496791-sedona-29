@@ -353,6 +353,7 @@ input[type="radio"].visually-hidden {
   display: inline-block;
   margin-right: 16px;
   padding: 10px 30px;
+  vertical-align: middle;
   font: inherit;
   text-align: center;
   color: var(--basic-white);

@@ -6,9 +6,10 @@
     <title>Каталог - Седона</title>
     <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <link rel="StyleSheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/normilize.css">
 </head>
 
-<body class="page-body2">
+<body class="page-body-2">
   <header class="main-header">
     <div class="logo">
       <a href="index.html"><img src="img/logo.svg" alt="sedona-icon" width="138" height="70"></a>
@@ -18,15 +19,14 @@
       <ul class="site-navigation">
         <li><a href="#">Информация</a></li>
         <li><a href="#">Фото и видео</a></li>
-        <li></li>
         <li><a href="#">Карта штата</a></li>
         <li><a href="second-page.html">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
-    <main class="container2">
+    <main class="container-2">
         <div class="filter clearfix">
-            <form method="post" action="/filter">
+            <form method="get" action="https://echo.htmlacademy.ru">
                 <div class="filter-infrastructure">
                     <p class="filter-infrastructure-title">Инфраструктура:</p>
                     <input type="checkbox" id="filter-pool" checked>
@@ -88,7 +88,7 @@
                                 <a class="result-housing-more" href="#">Подробнее</a>
                             </div>
                             <div class="result-about-booking">
-                                <p class="result-about-price">от 3500 Р.</p>
+                                <p class="result-about-price">от 4000 Р.</p>
                                 <a class="result-booking-btn" href="#">Забронировать</a>
                             </div>
                         </div>
@@ -102,7 +102,7 @@
             <div class="result-housing clearfix">
                 <div class="result-housing-left">
                     <figure class="result-housing-img">
-                        <img src="img/Desert-Quail-Inn.jpg" height="90" alt="Desert quail inn">
+                        <img src="img/result-hotel-desert.jpg" height="90" alt="Desert quail inn">
                     </figure>
                     <div class="result-housing-infoblock">
                         <a class="result-infoblock-title" href="#">Desert quail inn</a>
@@ -112,7 +112,7 @@
                                 <a class="result-housing-more" href="#">Подробнее</a>
                             </div>
                             <div class="result-about-booking">
-                                <p class="result-about-price">от 2000 Р.</p>
+                                <p class="result-about-price">от 3000 Р.</p>
                                 <a class="result-booking-btn" href="#">Забронировать</a>
                             </div>
                         </div>
@@ -126,7 +126,7 @@
             <div class="result-housing clearfix">
                 <div class="result-housing-left">
                     <figure class="result-housing-img">
-                        <img src="img/Villas-at-Poco-Diablo.jpg" height="90" alt="Villas at poco diablo">
+                        <img src="img/result-hotel-villas.jpg" height="90" alt="Villas at poco diablo">
                     </figure>
                     <div class="result-housing-infoblock">
                         <a class="result-infoblock-title" href="#">Villas at poco diablo</a>
@@ -136,7 +136,7 @@
                                 <a class="result-housing-more" href="#">Подробнее</a>
                             </div>
                             <div class="result-about-booking">
-                                <p class="result-about-price">от 4000 Р.</p>
+                                <p class="result-about-price">от 2000 Р.</p>
                                 <a class="result-booking-btn" href="#">Забронировать</a>
                             </div>
                         </div>
@@ -150,15 +150,15 @@
         </div>
     </main>
   
-    <footer class="page-footer2">
-      <div class="tel2">
+    <footer class="page-footer-2">
+        <div class="tel-2">
             <h2>#visitSEDONA</h2>
             <p>
             ТЕЛ: +7(495) 666-01-66
             </p>
       </div>
 
-      <div class="cite2">
+      <div class="cite-2">
         <ul>
           <li>
             <a href="#"><img src="img/twiter.png" alt="twiter" width="46" height="48"></a>
@@ -172,9 +172,11 @@
         </ul>
       </div>  
 
-      <div class="htmlAcademy2">
-          Website by
-          <img src="img/logo-htmlacademy.png" alt="логотип академии">
+      <div class="html-academy-2">
+        Website by
+        <a href="https://up.htmlacademy.ru/htmlcss/29">
+          <img src="img/logo-htmlacademy.png" width="114" height="40" alt="логотип академии">
+        </a>
       </div>  
     </footer>
 </body>
